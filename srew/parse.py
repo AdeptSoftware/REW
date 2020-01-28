@@ -157,7 +157,7 @@ class _PatternBuilder(Pattern):
     def build(self):
         if len(self._data) == 1 and self._data[0][0] == _c.GROUP:
             self._data = tuple(obj for obj in self._data[0][1])
-        tuple(print(obj) for obj in self._data)     # Для отладки
+        # tuple(print(obj) for obj in self._data)     # Для отладки
         return Pattern(self._pattern, _tuple(self._data), self._flags)
 
 

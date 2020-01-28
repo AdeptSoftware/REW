@@ -1,5 +1,6 @@
 # 30.12.2019
 def _r(value, name):
+	"""
     class _NamedIntConstant(int):
         def __new__(cls, n, v):
             self = super(_NamedIntConstant, cls).__new__(cls, v)
@@ -12,7 +13,8 @@ def _r(value, name):
         __repr__ = __str__
 
     return _NamedIntConstant(name, value)
-    # return value
+	"""
+    return value
 
 
 # ======== ========= ========= ========= ========= ========= ========= =========
